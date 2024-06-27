@@ -1,0 +1,1580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diya Jain - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="jquery-3.7.1.min.js"></script>
+  
+
+    <style>
+            * {
+        margin: 0;
+        padding: 0;
+
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+
+    body {
+        background-color: rgb(220, 220, 241);
+        color: rgb(67 2 82);
+        font-family: 'Poppins', sans-serif;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(126, 42, 205);
+        position: fixed;
+        width: 100%;
+    }
+    header{
+         height:20vh;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li {
+        list-style: none;
+        margin: 0 23px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    nav ul li a:hover {
+        color: rgb(29, 6, 50);
+        font-size: 1.01rem;
+        background-color: #d0abda;
+        border-radius: 10%;
+        width: 25px;
+    }
+
+    .left {
+        font-size: 1.5rem;
+        color: white;
+    }
+    #home{
+      padding-top: 4.5%;
+        
+    }
+
+    #firstsection {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 40px 0;
+        align-items: center;
+        padding-left: 9%;
+        
+      
+        
+        
+    }
+
+    #firstsection>div {
+        width: 30%;
+    }
+
+    .leftsection {
+
+        font-size: 3rem;
+       
+        
+
+    }
+
+    .rightsection img {
+        width: 100%;
+        
+    }
+
+    .purple {
+        color: rgb(126, 42, 205);
+    }
+
+    .grey {
+        color: rgb(101, 75, 104);
+        font-size: 10;
+    }
+
+    .d1 {
+        font-size: 35px;
+    }
+
+    .img2 {
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+    }
+
+    .head {
+        text-align: center;
+    }
+
+    #element {
+        color: rgb(126, 42, 205);
+        font-size: 90%;
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    #about {
+        padding: 70px 0;
+        margin: auto;
+    }
+
+    main hr {
+        border: 0;
+        background: #2a064e;
+        height: 1.2px;
+        margin: 40px 84px;
+    }
+
+    .extra {
+        font-size: 18px;
+        position: relative;
+
+
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    #about h1 {
+        font-size: 1.9rem;
+    }
+
+    .img3 {
+        width: 85%;
+        height: 100%;
+        border-radius: 5%;
+    }
+
+    .col1 {
+        flex-basis: 35%;
+        margin-left: 8%;
+
+    }
+
+    .col2 {
+        flex: 60%;
+
+    }
+
+    h4 {
+
+        text-decoration: underline;
+        color: rgb(126, 42, 205);
+
+    }
+
+    #bc {
+        border-left: 1px solid #2a064e;
+
+
+    }
+
+    .t1 {
+        width: 85%;
+        height: 60%;
+
+    }
+
+    #abi {
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+    }
+
+    #p1 {
+        margin-bottom: 1.7%;
+    }
+
+    #edu,
+    #exp,
+    #btn {
+        background-color: rgb(126, 42, 205);
+        height: 30px;
+        width: 100px;
+        font-weight: bold;
+        color: white;
+        border-radius: 7%;
+        /* pointer-events: none; */
+    }
+
+    #services {
+        padding: 30px 0;
+    }
+
+    .services-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 40px;
+        margin-top: 50px;
+        margin-left: 6%;
+    }
+
+    #a {
+        padding: 45px;
+        height: 90%;
+        width: 50%;
+        margin: auto;
+        background: rgb(101, 75, 104);
+
+        font-size: 13px;
+        font-weight: 300;
+        border-radius: 5%;
+        color: white;
+        transition: tranform 0.5s, background 0.5s;
+
+    }
+
+    #a i {
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+
+    .services-list div a {
+        text-decoration: none;
+        color: white;
+        font-size: 12px;
+        margin-top: 20px;
+        display: inline-block;
+    }
+
+    .services-list #a:hover {
+        background: rgb(126, 42, 205);
+        transform: translateY(-10px);
+    }
+
+    #just {
+        margin-left: 8%;
+        margin-top: 16.2%;
+        width: 150vh;
+        height: 50vh;
+        position: absolute;
+        margin-bottom: 70%;
+        transform: translate(0%, -96%);
+        color: rgb(67 2 82);
+        font-weight: bold;
+        /* background-color: rgb(220, 220, 241); */
+
+    }
+
+
+
+    #eror {
+        font-size: 40px;
+        padding-left: 5%;
+
+
+    }
+
+    #sml {
+        font-size: 12px;
+
+    }
+
+    #bg {
+        width: 180vb;
+        height: 80vb;
+
+
+    }
+
+    #img {
+        padding-left: 8%;
+        opacity: 0.6;
+    }
+
+    .mh-skills .mh-professional-skill {
+        padding-right: 60px;
+        color: white;
+    }
+
+    .mh-skills .mh-professional-skill h3 {
+        font-size: 30px;
+        line-height: 40px;
+        text-align: center;
+        font-weight: 400;
+        margin-bottom: 60px;
+        font-family: 'Poppins', 'sans-serif';
+
+    }
+
+    .mh-professional-skills {
+        padding-left: 20%;
+        ;
+    }
+
+    .mh-professional-skills h3 {
+        font-size: 30px;
+        line-height: 40px;
+        text-align: center;
+        font-weight: 400;
+        margin-bottom: 60px;
+        font-family: 'Poppins', 'sans-serif';
+        height: 10px;
+    }
+
+
+    .candidatos {
+        position: relative;
+        margin-bottom: 15px;
+        font-family: 'Poppins', 'sans-serif'
+
+    }
+
+    .candidatos .parcial {
+        display: inline-block;
+        width: 100%;
+        vertical-align: middle;
+    }
+
+    .candidatos .parcial .info {
+
+        position: relative;
+        font-family: 'Poppins', 'sans-serif'
+    }
+
+    .candidatos .parcial .info .nome {
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 15px;
+        font-weight: 600;
+        opacity: 0.9;
+        font-family: 'Poppins', 'sans-serif';
+    }
+
+    .candidatos .parcial .info .percentage-num {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 14px;
+        font-weight: normal;
+
+    }
+
+    .candidatos .parcial .progressbar {
+        position: relative;
+        width: 100%;
+        height: 7px;
+        margin: 30px 0 2px;
+        border-radius: 10px;
+        background: rgb(128, 108, 130);
+        ;
+
+
+
+    }
+
+    .candidatos .parcial .percentagem {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 7px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        background: #2a064e;
+        transition: 3s all;
+        animation-duration: 3s;
+        animation: animationProgress;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    #st {
+        height: 2%;
+        width: 80%;
+        margin-top: -35px;
+        margin-left: 10%;
+
+
+
+
+
+        align-self: center;
+
+    }
+
+    #stc1 {
+        width: 30%;
+        height: 40%;
+        padding-left: 2%;
+    }
+
+    #stc2 {
+        width: 30%;
+        height: 40%;
+        padding-left: 2%;
+        padding-top: 4.3%;
+
+    }
+
+    .container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 40px;
+        margin-right: 11%;
+        margin-left: -25px;
+        margin-bottom: 40px;
+
+
+    }
+
+    .container .progress {
+        position: relative;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        color: #fff;
+        background: #847388 linear-gradient(to right, transparent 50%, var(--clr) 0);
+
+
+    }
+
+    .container .progress h3 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 2.5em;
+        z-index: 1;
+        font-weight: 500;
+    }
+
+    .container .progress h3 span {
+        font-size: 0.65em;
+        font-weight: 400;
+    }
+
+    .container .progress h4 {
+        position: absolute;
+        top: 62%;
+        left: 50%;
+        transform: translate(-50%);
+        z-index: 1;
+        font-weight: 500;
+        color: var(--clr);
+        text-transform: uppercase;
+
+
+    }
+
+    .container .progress::before {
+        content: '';
+        display: block;
+        height: 100%;
+        margin-left: 50%;
+        transform-origin: left;
+        border-radius: 0 100% 100% 0/50%;
+
+    }
+
+    .container .progress::after {
+
+        content: '';
+        position: absolute;
+        inset: 10px;
+        border-radius: 50%;
+        background: rgb(126, 42, 205);
+
+
+    }
+
+    .container .progress::before {
+        background: var(--clr);
+        transform: rotate(calc(((var(--i) - 50) * 0.01turn)));
+    }
+
+    .container .progress.less::before {
+
+        background: #847388;
+        transform: rotate(calc(((var(--i) - 0) * 0.01turn)));
+
+    }
+    
+    .contact-left {
+        flex-basis: 35%;
+        margin-left: 5%;
+    }
+
+    .contact-right {
+        flex-basis: 60%;
+    }
+
+    .contact-left p {
+        margin-top: 30px;
+    }
+
+    .contact-left p i {
+        color: #2a064e;
+        margin-right: 15px;
+        font-size: 35px;
+    }
+
+    .social-icons {
+        margin-top: 30px;
+
+    }
+
+    .social-icons a {
+        text-decoration: none;
+        font-size: 40px;
+        margin-right: 15px;
+        color: #2a064e;
+        display: inline block;
+        transition: transform 0.5s;
+    }
+
+    .social-icons a:hover:hover {
+        color: rgb(126, 42, 205);
+        transform: translate(-5px);
+    }
+
+    .contact-right form {
+        width: 60%;
+    }
+
+    form input,
+    form textarea {
+        width: 95%;
+        border-color: #2a064e;
+        outline: none;
+        background: rgb(126, 42, 205);
+        ;
+        padding: 15px;
+        margin: 15px 0;
+        color: white;
+        font-size: 18px;
+        border-radius: 5px;
+       margin-left: 11%;
+
+
+    }
+
+    form ::placeholder {
+        color: white;
+    }
+
+    form #btn {
+        padding: 14px 60px;
+        font-size: 18px;
+        width: 40%;
+        height: 10%;
+        margin-left: 11%;
+
+
+        cursor: pointer;
+
+
+    }
+
+    form #btn:hover {
+        background: #847388;
+    }
+
+    .copyright {
+        width: 100%;
+        text-align: center;
+        padding: 25px 0;
+        font-weight: 300;
+        margin-top: 20px;
+        background: rgb(126, 42, 205);
+        color: white;
+    }
+
+    #msg {
+        color: #2a064e;
+        margin-top: 10px;
+        display: block;
+    }
+    #mrq
+    {
+        width: 100%; 
+        color:#2a064e;
+        font-size: smaller;
+    }
+    nav .fa-solid {
+        display: none;
+
+    } 
+    
+   
+    /* css for small screen*/
+    @media only screen and (max-width: 600px) {
+
+            html{
+                overflow-x: hidden;
+                
+                
+              
+            }
+        .rightsection img{
+
+            width:26.3vb;
+            height:30vb;
+            padding-left: -6vb;
+           
+            margin-top: 5vb;
+
+        }
+        
+        .rightsection
+        {
+            width:10vb;
+            height: 65vb;
+          margin-left: -19vb;
+            padding-top: 8.5vb;
+            
+
+            
+
+        }
+        .leftsection
+        {
+
+            width:30vb;
+            height:65vb;
+            padding-top: 8.5vb;
+            margin-left: -7.2vb;
+            
+        }
+        #firstsection{
+            display: flex;
+            width:46vb;
+            height: 58vb;
+            /* padding-top: 7vb;
+            margin-top: 7vb; */
+            padding-left: 0vb;
+          
+           
+
+        }
+        #home
+        {
+            width:100vb;
+            /* padding-top: 5vb; */
+            height: 50vb;
+        }
+        #d
+        {
+            font-size:4.9vh;
+            margin-left: -5.5vb;
+            padding-left: 3.1vb;
+            
+
+        }
+        .d1
+        {
+            font-size:2.7vh;
+            margin-left: -5.3vb;
+            padding-left: 3.9vb;
+            width: 20vb;
+            height:9vb;
+           
+        }
+        .extra{
+
+            font-size:1.3vh;
+            margin-left: -5.5vb;
+            margin-top:-5.5vb ;
+            padding-left: 4.1vb;
+            width: 25vb;
+        }
+        #mrq{
+            width: 45vb;
+            
+        
+            
+            
+            
+            
+                        
+            
+        }
+        #br1{
+            display: none;
+        }
+        nav{
+            height: 10vb;
+            width:49.6vb;
+            position: absolute;
+            right: 0;
+        }
+        #tbleheader{
+            font-size:xx-small;
+            margin-right: 18vb;
+        }
+        .left{
+            font-size :2.3vb;
+        }
+        .img2{
+            
+            width: 7vb;
+            height: 7vb;
+        }
+        nav .fa-solid{
+            display: block;
+            font-size: 25px;
+            color: #fff;
+
+        }
+        nav ul{
+            background:#847388;
+            position: absolute;
+            top:0;
+            right: 0;
+            
+            width:158px;
+            height: 81vh;
+            padding-top: 70px;
+            z-index: 2;
+            transition: right 0.5s;
+            display:none;
+          
+           
+          
+            
+        }
+        nav ul .fa-solid{
+            position: absolute;
+            top:25px;
+            left:25px;
+            cursor: pointer;
+        }
+    nav ul li{
+         height: 5vb;
+
+    }
+    .img3{
+        width: 24vb;
+        height: 33.5vb;
+        
+    }
+    .col1{
+        margin-left: 2vb;
+        margin-top: 15vb;
+    }
+    #start1{
+        margin-left:-25.0vb;
+        font-size: small;
+        
+    }
+   #p1{
+    font-size: 2.0vb;
+    width:17vb;
+    height: 35vb;
+    margin-left: 2.0vb;
+   }
+   .t1{
+    margin-left: -22vb;
+        height: 10vb;
+        width: 34vb;
+   }
+    #bc{
+        width:10vb;
+      padding-right: 1.5vb;
+        font-size: 1.5vb;
+    }
+  .t1 ul{
+    font-size: larger;
+    width: 20vb;
+
+  }
+    
+
+    #bg{
+        width: 100vw;
+        height: auto;
+        margin-left: -4.1vb;
+    }
+    #edu
+    {
+        margin-left: -24vb;
+    }
+    #achitable
+    {
+        margin-left: -3vb;
+        font-size: small;
+       
+    }
+    .services-list
+    {
+        margin-left: 0vb;
+    }
+    #a{
+        padding-top: 1vb;
+    }
+    #portable{
+        
+        font-size: small;
+        margin-left: -3.3vb;
+    }
+    #skiltable{
+        font-size: small;
+        margin-left: -33.5vb;
+    }
+    #st{
+        margin-left: 4.5vb;
+        padding-top: 5vb;
+        
+    
+    }
+    #skilh3{
+        font-size: smaller;
+        
+       
+        
+    }
+    #stc1{
+        width: 20vb;
+        padding-right: 2vb;
+        padding-top: 2vb;
+    }
+    #stc2{
+        width:20vb;
+        padding-top: 14.6vb;
+      
+    }
+    #skills .container{
+        margin-left: 0.5vb;
+        margin-top: 2vb;
+    }
+    #contable{
+        font-size: small;
+        margin-left: -3vb;
+    }
+    #rowid{
+        display: block;
+        padding-left: -1vb;
+    }
+    .contact-left{
+        margin-left: -1.5vb;
+    }
+    .contact-right{
+        margin-left: -1vb;
+    }
+
+    #contimg{
+        margin-left: -11vb;
+        padding: 0vb;
+      
+    }
+     form #btn{
+       width: 30vb; 
+    }
+    #msg{
+        font-size: smaller;
+    }
+    #rowww{
+        padding-left: -20vb;
+    }
+  
+ 
+
+
+
+
+
+
+
+
+
+
+    }
+   
+
+        
+            
+    
+    
+    
+    
+    
+    
+ 
+
+
+
+
+    @keyframes animationProgress {
+        from {
+            width: 0;
+        }
+    }
+        
+    </style>
+    <script src="https://kit.fontawesome.com/e815d61c49.js" crossorigin="anonymous"></script>
+ 
+</head>
+
+<body>
+    <header>
+        <nav>
+            <table id="tbleheader">
+                <tr>
+                    <td> <img src="img2.png" class="img2"> </td>
+                    <td>&nbsp;&nbsp;</td>
+                    <td>
+                        <div class="left">Diya's Portfolio
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+
+            <div class="right">
+                <ul id="sidemenu"> 
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#services">Achievements</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact me</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </div>
+        </nav>
+    </header>
+    <br>
+   
+    <main>
+    <div id="home" style="width: 100%;"><br>
+        <div id="firstsection">
+            <div class="leftsection">
+                <div id="d"><b>Greetings!</b></div>
+                <div class="d1">My name is <span class="purple">Diya Jain</span></div>
+                <div class="d1">I am a
+                    <span id="element"></span>
+                </div><br>
+                <div class="extra">Welcome to my Digital Portfolio . Feel free to explore my work and discover my skills
+                    . Let's
+                    connect and collaborate on something
+                    amazing.
+                 </div>
+            </div>
+            <div class="rightsection"><img src="img1.png" alt=""></div>
+            <br id="br1">
+        </div><br id="br1"><br id="br1"><br id="br1"><br id="br1">
+        <marquee  behaviour="scroll" scrollamount="10" id="mrq" > Hello And Thank you for visiting ! Explore my Portfolio
+            where creativity meets innovation.Hello And Thank you for visiting ! Explore my Portfolio
+            where creativity meets innovation.Hello And Thank you for visiting ! Explore my Portfolio
+            where creativity meets innovation.Hello And Thank you for visiting ! Explore my Portfolio
+            where creativity meets innovation.
+        </marquee>
+    </div>
+        <br><br><br><br><br>
+     
+        <div id="about"><br>
+            <div class="container1">
+                <div class="row" id="rowww">
+
+                    <div class="col1"> <img src="img3.jpg" class="img3"></div>
+                    <div class="col2">
+                        <table  id="start1">
+                            <tr>
+                                <td><img src="aboutmeimg.jpeg" id=abi> </td>
+                                <td>&nbsp;</td>
+                                <td> 
+                                    <h1>About Me </h1>
+                                    <span class="grey">My personal and professional journey</span>
+                                </td>
+                            </tr>
+                        </table>
+                        <br>
+                        <p id="p1">I am an Msc.IT Student currently pursuing my Bachelor's degree,with a passion for
+                            technology , management and
+                            entrepreneurship. </p>
+
+                        <table class="t1">
+                            <tr>
+                                <td id="bc" class="cb1">
+                                    <ul>
+                                        <h4>Professional Interests</h4>
+                                        <li>Technology & Management :<p>Focused on leveraging IT to improve business
+                                                operations.
+                                            </p>
+                                        </li>
+                                        <li>Graphic & UI/UX design :<p>Keen to learn and Develope skills in creating
+                                                intuitive and visually appealing
+                                                interfaces.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </td>
+                                <td id="bc" class="cb2">
+                                    <ul>
+                                        <h4>Creative Pursuits</h4>
+                                        <li>Art & Painting :<p>Expressing creativity to various mediums.Exploring
+                                                diffrent art styles.
+                                            </p>
+                                        </li>
+                                        <li>Writing :<p>Exploring language and emotions through poetry writing.jotting
+                                                down thoughts and
+                                                discovering new perspectives.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="bc" class="cb3">
+                                    <ul>
+                                        <h4>Personal Interests</h4>
+                                        <li>Travel Enthusiast :<p>Passionate about exploring new places and culture.
+                                            </p>
+                                        </li>
+                                        <li>Lifelong Learner :<p>Committed to continuous growth and new experiences.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </td>
+                                <td id="bc" class="cb4">
+                                    <ul>
+                                        <h4>Future Aspiration</h4>
+                                        <li>Entrepreneurship :<p>Eager to explore ventures and bring innovative ideas to
+                                                life.
+                                            </p>
+                                        </li>
+                                        <li>Leadership & growth :<p>Aspiring to lead and advance my skills, expertise in
+                                                tech & management.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                        <br>
+                        <select id="edu">
+                            <option><b>Education</b></option>
+                            <option>
+                                <ul>
+                                    <li>2020 : Completed 10th from C.N. Vidhyalaya</li>
+                                </ul>
+                            </option>
+                            <option>
+                                <ul>
+                                    <li>2022 : Completed 12th from C.N. Vidhyalaya</li>
+                                </ul>
+                            </option>
+                            <option>
+                                <ul>
+                                    <li>2025 : Bsc(Ca&It) from KSBMIT</li>
+                                </ul>
+                            </option>
+                        </select>&nbsp;&nbsp;&nbsp;
+                        <select id="exp">
+                            <option>Experience</option>
+                            <option>
+                                <ul>
+                                    <li>Fresher</li>
+                                </ul>
+                            </option>
+                            <option>
+                                <ul>
+                                    <li>2024: Web Intern at ShadowFox</li>
+                                </ul>
+                            </option>
+                        </select>&nbsp;&nbsp;&nbsp;
+                        <button id="btn" style="border: none; text-decoration: none;"> <a href="DiyaJain_CV.pdf"
+                                download id="btn">Download CV</a></button>
+
+
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        
+        <div id="services"><br><br><br>
+            <div class="container1">
+                <table  id="achitable" style="padding-left: 8%;">
+                    <tr>
+                        <td><img src="achimg.jpeg" id=abi> </td>
+                        <td>&nbsp;</td>
+                        <td>
+                            <h1>Achievements </h1>
+                            <span class="grey">My accomplishments and milestones</span>
+                        </td>
+                    </tr>
+                </table>
+                <h1 style="padding-left: 9%;"></h1>
+                <span class="grey"></span>
+                <div class="services-list">
+
+                    <div id="a">
+                        <i class="fa-solid fa-robot"></i>
+                        <h2>Google AI essential course</h2>
+                        <p>Completed Google AI essential course which provided comprehensive training on the
+                            fundamentals
+                            of artifical intelligence.Gained hand on experience on AI tools and techniques and developed
+                            practical skills in designing and implementaing AI solutions.
+                        </p>
+                        <a href="https://coursera.org/share/26bf207d4158d76e09aa4a37e41db7ae">View Certificate</a>
+                    </div>
+                    <div id="a">
+                        <i class="fa-brands fa-python"></i>
+                        <h2>Python Development</h2>
+                        <p>Engaged</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div id="a">
+                        <i class="fa-solid fa-user"></i>
+                        <h2>UI/UX & Graphic designing</h2>
+                        <p>Coming Soon </p>
+                        <a href="#">Learn more</a>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+       <br><br>
+        <div id="portfolio"><br><br><br><br>
+            <div class="container1" style="position: relative;">
+                <table id="portable" style="padding-left: 8%;">
+                    <tr>
+                        <td><img src="projectimg.jpeg" id=abi> </td>
+                        <td>&nbsp;</td>
+                        <td>
+                            <h1>Projects </h1>
+                            <span class="grey">Notable projects I have worked on</span>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <div id="img"><img src="bgimgfinal.png" id="bg">
+                    <!-- <div id="just">
+                        <table style="padding: 2%; align-self: center; ">
+
+                            <tr>
+                                <td><i class="fa-solid fa-circle-exclamation" id="eror"></td></i> &nbsp;<td id="sml"
+                                    style="padding-left: 2%;">
+                                    <p>Currently in the learning stage of my journey, I have not yet undertaken specific
+                                        projects . However, I am eagerly preparing to embark on the exciting phase in
+                                        the near future.
+                                        I invite you to revisit this page for updates as i look forward to showcasing my
+                                        upcoming projects.
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div> -->
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+        
+        <div id="skills"><br><br><br><br>
+            <div class="container1">
+                <table id="skiltable" style="padding-left: 70%;">
+                    <tr>
+                        <td><img src="skillsimg.jpeg" id=abi> </td>
+                        <td>&nbsp;</td>
+                        <td>
+                            <h1>Skills </h1>
+                            <span class="grey">Strengths and Capablities</span>
+                        </td>
+                    </tr>
+                </table>
+                <table align="center" id="st">
+                    <tr>
+                        <section class="mh-skills" id="mh-skills">
+                            <div class="container">
+                                <div class="r1">
+                                    <td id="stc1">
+                                        <div class="col-sm-12 col-md-16">
+                                            <div class="mh-skills-inner">
+                                                <div class="mh-professional-skill">
+                                                    <h3 id="skilh3"
+                                                        style="padding-bottom: 4%; font-size:larger; text-decoration: underline;">
+                                                        Technical And Personal Skills</h3>
+                                                    <div class="each-skills">
+                                                        <div class="candidatos">
+                                                            <div class="parcial">
+                                                                <div class="info">
+                                                                    <div class="nome"><i class="fa-solid fa-c"></i>
+                                                                        &nbsp; C</div>
+                                                                    <div class="percentage-num">86%</div>
+                                                                </div>
+                                                                <div class="progressbar">
+                                                                    <div class="percentagem" style="width: 86%;"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="candidatos">
+                                                            <div class="parcial">
+                                                                <div class="info">
+                                                                    <div class="nome"><i class="fa-solid fa-code"></i>
+                                                                        &nbsp; C++</div>
+                                                                    <div class="percentage-num">85%</div>
+                                                                </div>
+                                                                <div class="progressbar">
+                                                                    <div class="percentagem" style="width: 85%;"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="candidatos">
+                                                            <div class="parcial">
+                                                                <div class="info">
+                                                                    <div class="nome"><i
+                                                                            class="fa-solid fa-computer"></i> &nbsp; C#
+                                                                    </div>
+                                                                    <div class="percentage-num">70%</div>
+                                                                </div>
+                                                                <div class="progressbar">
+                                                                    <div class="percentagem" style="width: 70%;"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="candidatos">
+                                                            <div class="parcial">
+                                                                <div class="info">
+                                                                    <div class="nome"><i
+                                                                            class="fa-brands fa-python"></i> &nbsp;
+                                                                        Python</div>
+                                                                    <div class="percentage-num">45%</div>
+                                                                </div>
+                                                                <div class="progressbar">
+                                                                    <div class="percentagem" style="width: 45%;"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="candidatos">
+                                                            <div class="parcial">
+                                                                <div class="info">
+                                                                    <div class="nome"><i class="fa-brands fa-js"></i>
+                                                                        &nbsp; Javascript</div>
+                                                                    <div class="percentage-num">50%</div>
+                                                                </div>
+                                                                <div class="progressbar">
+                                                                    <div class="percentagem" style="width: 50%;"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="candidatos">
+                                                            <div class="parcial">
+                                                                <div class="info">
+                                                                    <div class="nome"><i
+                                                                            class="fa-solid fa-clipboard-question"></i>
+                                                                        &nbsp; Jquery</div>
+                                                                    <div class="percentage-num">55%</div>
+                                                                </div>
+                                                                <div class="progressbar">
+                                                                    <div class="percentagem" style="width: 55%;"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="candidatos">
+                                                            <div class="parcial">
+                                                                <div class="info">
+                                                                    <div class="nome"><i
+                                                                            class="fa-brands fa-node-js"></i> &nbsp;
+                                                                        Node-Js</div>
+                                                                    <div class="percentage-num">20%</div>
+                                                                </div>
+                                                                <div class="progressbar">
+                                                                    <div class="percentagem" style="width: 20%;"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                    <td id="stc2">
+                                        <div class="candidatos">
+                                            <div class="parcial">
+                                                <div class="info">
+                                                    <div class="nome"><i class="fa-brands fa-angular"></i> &nbsp;
+                                                        Angular</div>
+                                                    <div class="percentage-num">10%</div>
+                                                </div>
+                                                <div class="progressbar">
+                                                    <div class="percentagem" style="width: 10%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="candidatos">
+                                            <div class="parcial">
+                                                <div class="info">
+                                                    <div class="nome"><i class="fa-brands fa-html5"></i> &nbsp; HTML
+                                                    </div>
+                                                    <div class="percentage-num">87%</div>
+                                                </div>
+                                                <div class="progressbar">
+                                                    <div class="percentagem" style="width: 87%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="candidatos">
+                                            <div class="parcial">
+                                                <div class="info">
+                                                    <div class="nome"><i class="fa-solid fa-file-code"></i> &nbsp; CSS
+                                                    </div>
+                                                    <div class="percentage-num">80%</div>
+                                                </div>
+                                                <div class="progressbar">
+                                                    <div class="percentagem" style="width: 80%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="candidatos">
+                                            <div class="parcial">
+                                                <div class="info">
+                                                    <div class="nome"><i class="fa-solid fa-server"></i> &nbsp; MySQL
+                                                    </div>
+                                                    <div class="percentage-num">8%</div>
+                                                </div>
+                                                <div class="progressbar">
+                                                    <div class="percentagem" style="width: 8%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="candidatos">
+                                            <div class="parcial">
+                                                <div class="info">
+                                                    <div class="nome"><i class="fa-brands fa-linux"></i> &nbsp;Linux
+                                                    </div>
+                                                    <div class="percentage-num">34%</div>
+                                                </div>
+                                                <div class="progressbar">
+                                                    <div class="percentagem" style="width: 34%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="candidatos">
+                                            <div class="parcial">
+                                                <div class="info">
+                                                    <div class="nome"><i class="fa-brands fa-java"></i> &nbsp; Java
+                                                    </div>
+                                                    <div class="percentage-num">38%</div>
+                                                </div>
+                                                <div class="progressbar">
+                                                    <div class="percentagem" style="width: 38%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="candidatos">
+                                            <div class="parcial">
+                                                <div class="info">
+                                                    <div class="nome" id="od"><i class="fa-solid fa-database"></i> &nbsp; Oracle
+                                                        </div>
+                                                    <div class="percentage-num">7%</div>
+                                                </div>
+                                                <div class="progressbar">
+                                                    <div class="percentagem" style="width: 7%;"></div>
+                                                </div>
+                                            </div>
+                                    </td>
+                                </div>
+                            </div>
+            </div>
+            </section>
+
+
+
+
+
+            </tr>
+
+
+
+
+            </table>
+            <div class="container" style="padding-left: 14%;">
+
+
+                <div class="progress" style="--i:70;--clr: #2a064e;;">
+                    <h3>
+                        70<span>%</span>
+                    </h3><br>
+                    <h4 style="font-size: x-small;color: #fff;">Communication</h4>
+                </div>
+                <div class="progress" style="--i:80;--clr: #2a064e;;">
+                    <h3>
+                        80<span>%</span>
+                    </h3>
+                    <h4 style="font-size: x-small;color: #fff;">Leadership</h4>
+                </div>
+                <div class="progress " style="--i:85;--clr: #2a064e;;">
+                    <h3>
+                        85<span>%</span>
+                    </h3>
+                    <h4 style="font-size: x-small;color: #fff;">Creativity</h4>
+                </div>
+                <div class="progress less" style="--i:50;--clr: #2a064e;;">
+                    <h3>
+                        50<span>%</span>
+                    </h3>
+                    <h4 style="font-size: x-small;color: #fff;">DecisionMaking</h4>
+                </div>
+                <div class="progress" style="--i:82;--clr: #2a064e;;">
+                    <h3>
+                        82<span>%</span>
+                    </h3>
+                    <h4 style="font-size: x-small;color: #fff;">Team Work</h4>
+                </div>
+                <div class="progress" style="--i:72;--clr: #2a064e;;">
+                    <h3>
+                        72<span>%</span>
+                    </h3>
+                    <h4 style="font-size: x-small;color: #fff;">ProblemSolving</h4>
+                </div>
+
+            </div>
+        </div>
+
+
+        </div>
+        <br><br>
+        <div id="contact"><br><br><br><br>
+            <div class="container1">
+                <table  id="contable" style="padding-left: 8%;">
+                    <tr>
+                        <td><img src="contactmeimg.jpeg" id=abi> </td>
+                        <td>&nbsp;</td>
+                        <td>
+                            <h1>Contact Info</h1>
+                            <span class="grey">Get In Touch With Me</span>
+                        </td>
+                    </tr>
+                </table>
+                <div class="row"  id="rowid" style="padding-left: 10%; padding-top: 4%;">
+                    <div class="contact-left">
+                        <h1 class="sub-title" style="font-size: 26px;">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i>&nbsp;diajain315@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>&nbsp;9157XXXXXX</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/profile.php?id=100080263938629"><i
+                                    class="fa-brands fa-square-facebook"></i></a>
+                            <a href="https://x.com/DiyaJai88621133"><i class="fa-brands fa-square-x-twitter"></i></a>
+                            <a href="https://www.instagram.com/dia_jain315/"><i
+                                    class="fa-brands fa-square-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/diya-jain-30a94a2a4/"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/diajain315"><i class="fa-brands fa-square-github"></i></a>
+                        </div>
+                        <div style="padding-left: -10vb;"><img src="last1.webp" id="contimg"
+                                style="width: 60vb; height: 40vb; "></div>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet" >
+                            <input type="text" name="Name" placeholder="Your Full Name" required>
+                            <input type="email" name="email" placeholder="Your Mail" required>
+                            <input type="text" name="sub" placeholder="Subject" required>
+                            <textarea name="Message" placeholder="Message" rows="6"></textarea>
+                            <button type="submit" id="btn" class="clk" value="submit" style="border-color: #2a064e;">Submit</button>
+
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <hr>
+        <div class="copyright">
+            <p><i class="fa-solid fa-copyright"></i>&nbsp;Copyright Diya Jain 2024 .All rights reserved.</p>
+        </div>
+
+
+
+
+
+
+
+
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Designer.', 'Web Developer.',],
+            typeSpeed: 70
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".extra").animate({ left: '35px' }, "8000");
+            $(".extra").animate({ left: '0px' }, "8000");
+            
+            
+
+        });
+      
+
+    </script>
+        <script>
+            $(document).ready(function () {
+               
+                $(".clk").click(function(){
+                 
+                    alert("Please Check Below The Button If Your Message Was Sent ! Please Wait for Sometime.");
+                });
+                
+    
+            });
+          
+    
+        </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzxPSZuN9lJRHjLJv4tjkiplgJi1fy0jt22dZsFSQi8rhbP-ZG_ARhmgHOWwHaPI-Jc/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message Sent Successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <script>
+        var sidemeu=document.getElementById("sidemenu");
+        function openmenu(){
+
+            sidemeu.style.display="block";
+        }
+        function closemenu(){
+
+sidemeu.style.display="none";
+}
+    </script>
+
+
+
+</body>
+
+</html>
